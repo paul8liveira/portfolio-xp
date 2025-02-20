@@ -14,7 +14,7 @@ type WindowProps = {
 const Window = ({ windowId, children, windowTitle }: WindowProps) => {
   const { getWindowZIndex } = useDesktop();
 
-  // drap calculation
+  // drag calculation
   useEffect(() => {
     const window = document.getElementById(windowId);
     let headerPosX = 0,

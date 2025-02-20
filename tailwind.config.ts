@@ -10,7 +10,7 @@ export default {
     extend: {
       backgroundImage: {
         bliss: "url('/bg.jpg')",
-        taskbar:
+        "taskbar":
           "linear-gradient(0deg, #042b8e 0%, #0551f6 6%, #0453ff 51%, #0551f6 63%, #0551f6 81%, #3a8be8 90%, #0453ff 100%)",
         "taskbar-start-closed":
           "linear-gradient(0deg, #0c450c 0%, #308f2f 6%, #308f2f 51%, #308f2f 63%, #308f2f 77%, #97c597 100%, #97c597 93%, #308f2f 97%)",

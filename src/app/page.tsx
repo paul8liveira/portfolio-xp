@@ -5,7 +5,9 @@ import {
   ReadmeDesktopIcon,
   IEDesktopIcon,
   VideoDesktopIcon,
-} from "@/components/desktop";
+  ResumePTDesktopIcon,
+  ResumeENDesktopIcon,
+} from "@/components/desktop/icons";
 import WindowManager from "@/components/window/window-manager";
 import { handleMouseMove, handleMouseUp } from "@/utils/drag";
 
@@ -21,6 +23,8 @@ export default function Desktop() {
       <RecycleBinDesktopIcon />
       <ReadmeDesktopIcon />
       <VideoDesktopIcon />
+      <ResumePTDesktopIcon />
+      <ResumeENDesktopIcon />
 
       <WindowManager />
     </div>
