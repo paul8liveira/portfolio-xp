@@ -21,6 +21,8 @@ functionalities as much as possible.
 <br/>- double click desktop icons to open window
 <br/>- minimize, maximize and close window
 <br/>- start menu made using radix ui dropdown component
+<br/>- functinal internet explorer window with address bar and go button 
+(note: most of web sites does not allow to be rendered in an iframe due to security reasons) 
 <br/>*not as I sigh for but functional
 <br/>(I hope keep the feature list growing... 🤞) 
 

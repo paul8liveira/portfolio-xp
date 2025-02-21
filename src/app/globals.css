@@ -37,7 +37,7 @@
             m-0 
             rounded-t-lg
             top-[100px]
-            left-[250px];
+            left-[150px];
 
         box-shadow: inset -1px -1px #00138c, inset 1px 1px #0831d9, inset -2px -2px #001ea0, inset 2px 2px #166aee, inset -3px -3px #003bda, inset 3px 3px #0855dd;
     }    
@@ -62,7 +62,7 @@
         text-shadow: 1px 1px #0f1089;
     }
     dialog section {
-        @apply w-[500px] h-[300px] mr-1 mb-1;
+        @apply w-[600px] h-[300px] mr-1 mb-1;
     }
     dialog .resizer-right {
         @apply w-[5px] h-full bg-transparent absolute right-0 bottom-0 cursor-e-resize;

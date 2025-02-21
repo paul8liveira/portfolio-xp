@@ -2,23 +2,14 @@
 
 import { useDesktop } from "@/contexts/desktop-context";
 import Icon from "@/components/icon/desktop-icon";
-import Window from "@/components/window/window";
+import InternetExplorer from "@/components/ie";
 
 export default function RecycleBinDesktopIcon() {
   const { createWindowId, openWindow } = useDesktop();
 
   const handleDoubleClick = () => {
     const windowId = createWindowId();
-    openWindow(
-      windowId,
-      () => (
-        <Window windowId={windowId} windowTitle="Internet Explorer">
-          Internet Explorer
-        </Window>
-      ),
-      "Internet Explorer",
-      "/svg/ie-logo.svg"
-    );
+    openWindow(windowId, () => <InternetExplorer windowId={windowId} />, "Internet Explorer", "/svg/ie-logo.svg");
   };
 
   return (

@@ -2,7 +2,7 @@
 
 import { useDesktop } from "@/contexts/desktop-context";
 import Icon from "@/components/icon/pin-icon";
-import Window from "@/components/window/window";
+import InternetExplorer from "@/components/ie";
 
 export default function IEPinIcon() {
   const { createWindowId, openWindow } = useDesktop();
@@ -11,11 +11,7 @@ export default function IEPinIcon() {
     const windowId = createWindowId();
     openWindow(
       windowId,
-      () => (
-        <Window windowId={windowId} windowTitle="Internet Explorer">
-          Internet Explorer
-        </Window>
-      ),
+      () => <InternetExplorer windowId={windowId} />,
       "Internet Explorer",
       "/svg/ie-logo.svg"
     );
