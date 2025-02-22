@@ -17,7 +17,6 @@ export default function ResumeDesktopIcon() {
             src="/pdf/paulo-r-oliveira-en.pdf"
             width="100%"
             height="100%"
-            allowFullScreen
           />
         </Window>
       ),

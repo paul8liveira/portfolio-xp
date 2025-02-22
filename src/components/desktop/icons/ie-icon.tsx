@@ -9,7 +9,12 @@ export default function RecycleBinDesktopIcon() {
 
   const handleDoubleClick = () => {
     const windowId = createWindowId();
-    openWindow(windowId, () => <InternetExplorer windowId={windowId} />, "Internet Explorer", "/svg/ie-logo.svg");
+    openWindow(
+      windowId,
+      () => <InternetExplorer windowId={windowId} />,
+      "Internet Explorer",
+      "/svg/ie-logo.svg"
+    );
   };
 
   return (
