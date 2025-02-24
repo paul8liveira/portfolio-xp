@@ -5,7 +5,12 @@ import Image from "next/image";
 import { useDesktop } from "@/contexts/desktop-context";
 import Clock from "@/components/taskbar/clock";
 import StartButton from "@/components/taskbar/start/start-button";
-import { IEPinIcon, ReadmePinIcon, VideoPinIcon } from "@/components/taskbar/pin-icons";
+import {
+  IEPinIcon,
+  LinkedinPinIcon,
+  ReadmePinIcon,
+  VideoPinIcon,
+} from "@/components/taskbar/pin-icons";
 
 export default function Taskbar() {
   const { windows, minimizeWindow } = useDesktop();
@@ -19,6 +24,7 @@ export default function Taskbar() {
         <IEPinIcon />
         <ReadmePinIcon />
         <VideoPinIcon />
+        <LinkedinPinIcon />
       </div>
       <div className="flex grow items-center gap-1 overflow-x-auto">
         {windows.map((window) => (

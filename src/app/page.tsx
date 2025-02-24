@@ -1,32 +1,8 @@
-"use client";
-
-import {
-  RecycleBinDesktopIcon,
-  ReadmeDesktopIcon,
-  IEDesktopIcon,
-  VideoDesktopIcon,
-  ResumePTDesktopIcon,
-  ResumeENDesktopIcon,
-} from "@/components/desktop/icons";
-import WindowManager from "@/components/window/window-manager";
-import { handleMouseMove, handleMouseUp } from "@/utils/drag";
+import DeskTopContent from "@/components/desktop/desktop-content";
 
 export default function Desktop() {
-  return (
-    <div
-      className="w-full"
-      style={{ height: "100%" }}
-      onMouseMove={handleMouseMove}
-      onMouseUp={handleMouseUp}
-    >
-      <IEDesktopIcon />
-      <RecycleBinDesktopIcon />
-      <ReadmeDesktopIcon />
-      <VideoDesktopIcon />
-      <ResumePTDesktopIcon />
-      <ResumeENDesktopIcon />
-
-      <WindowManager />
-    </div>
+  const repos = fetch("https://api.github.com/users/paul8liveira/repos").then(
+    (response) => response.json()
   );
+  return <DeskTopContent repos={repos} />;
 }

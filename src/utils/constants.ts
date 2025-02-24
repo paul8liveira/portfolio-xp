@@ -20,15 +20,14 @@ functionalities as much as possible.
 <br/>- draggable and resizable window*
 <br/>- double click desktop icons to open window
 <br/>- minimize, maximize and close window
-<br/>- start menu made using radix ui dropdown component
+<br/>- static start menu made using radix ui dropdown component
 <br/>- functinal internet explorer window with address bar and go button 
 (note: most of web sites does not allow to be rendered in an iframe due to security reasons) 
 <br/>*not as I sigh for but functional
 <br/>(I hope keep the feature list growing... 🤞) 
 
-
 <br/><br/>It's important to give the credits to: 
-<br/>- the project https://github.com/boranbatuhan/xpmsn that helped me to understant how to use the correct box shadow for Windows XP border effects. 
+<br/>- the project https://github.com/boranbatuhan/xpmsn that helped me to understant how to use the correct box shadow for Windows XP border effects and where I got some icons. 
 <br/>- the CodePen https://codepen.io/jkasun/pen/QrLjXP where the draggable and resizable functions were adapted
 <br/><br/>I hope you enjoy this project as much as I enjoyed developing it ❤️.
 `;
