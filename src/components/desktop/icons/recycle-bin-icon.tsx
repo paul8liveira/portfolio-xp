@@ -44,7 +44,7 @@ export default function RecycleBinDesktopIcon() {
             />
             <Icon
               id="ico5"
-              iconSrc="/svg/ie-logo.svg"
+              iconSrc="/png/iexplorer.png"
               title="my-first-website-geocities.html"
               textColor="black"
               draggable={false}
@@ -207,7 +207,7 @@ export default function RecycleBinDesktopIcon() {
         </Window>
       ),
       "Recycle Bin",
-      "/png/recycle-bin-full.webp"
+      "/webp/recycle-bin-full.webp"
     );
   };
 
@@ -216,7 +216,7 @@ export default function RecycleBinDesktopIcon() {
       id="bin"
       x={10}
       y={100}
-      iconSrc="/png/recycle-bin-full.webp"
+      iconSrc="/webp/recycle-bin-full.webp"
       title="Recycle Bin"
       onDoubleClick={handleDoubleClick}
     />

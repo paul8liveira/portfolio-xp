@@ -13,7 +13,7 @@ export default function RecycleBinDesktopIcon() {
       windowId,
       () => <InternetExplorer windowId={windowId} />,
       "Internet Explorer",
-      "/svg/ie-logo.svg"
+      "/png/iexplorer.png"
     );
   };
 
@@ -22,7 +22,7 @@ export default function RecycleBinDesktopIcon() {
       id="ie"
       x={10}
       y={10}
-      iconSrc="/svg/ie-logo.svg"
+      iconSrc="/png/iexplorer.png"
       title="Internet Explorer"
       onDoubleClick={handleDoubleClick}
     />

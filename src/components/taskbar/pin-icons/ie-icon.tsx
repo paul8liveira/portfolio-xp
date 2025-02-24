@@ -13,9 +13,9 @@ export default function IEPinIcon() {
       windowId,
       () => <InternetExplorer windowId={windowId} />,
       "Internet Explorer",
-      "/svg/ie-logo.svg"
+      "/png/iexplorer.png"
     );
   };
 
-  return <Icon iconSrc="/svg/ie-logo.svg" onClick={handleClick} />;
+  return <Icon iconSrc="/png/iexplorer.png" onClick={handleClick} />;
 }
