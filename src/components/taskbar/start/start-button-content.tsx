@@ -82,7 +82,7 @@ export default function StartButtonContent() {
             description="Outlook Express"
           />
           <StartMenuItem
-            title="Media Player"
+            title="Windows Media Player"
             iconPath="/webp/media-player.webp"
           />
           <StartMenuItem

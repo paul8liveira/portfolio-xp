@@ -2,7 +2,7 @@
 
 import { useDesktop } from "@/contexts/desktop-context";
 import Icon from "@/components/icon/desktop-icon";
-import Window from "@/components/window/window";
+import MediaPlayer from "@/components/media-player";
 
 export default function VideoDesktopIcon() {
   const { createWindowId, openWindow } = useDesktop();
@@ -11,13 +11,9 @@ export default function VideoDesktopIcon() {
     const windowId = createWindowId();
     openWindow(
       windowId,
-      () => (
-        <Window windowId={windowId} windowTitle="About Me.mp4">
-          <div className="p-2">video</div>
-        </Window>
-      ),
-      "About Me.mp4",
-      "/ico/video.ico"
+      () => <MediaPlayer windowId={windowId} />,
+      "Windows Media Player",
+      "/webp/media-player.webp"
     );
   };
 
@@ -26,8 +22,8 @@ export default function VideoDesktopIcon() {
       id="aboutme"
       x={10}
       y={280}
-      iconSrc="/ico/video.ico"
-      title="About Me.mp4"
+      iconSrc="/webp/media-player.webp"
+      title="Windows Media Player"
       onDoubleClick={handleDoubleClick}
     />
   );
