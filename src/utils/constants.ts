@@ -1,8 +1,8 @@
 export const thisProjectText = `
 Hey! 
 <br/>This is my casual portfolio that I've develop to honor one of the
-most adorable OS's of the 2000's. This OS is part of my teenage years
-and because of this I felt so nostalgic developing this project. 
+most adorable OS's of the 2000's. This OS was part of my teenage years
+and because of this I felt very nostalgic while developing this project. 
 
 <br/><br/>This project was developed with: 
 <br/>- Next.js v15 
