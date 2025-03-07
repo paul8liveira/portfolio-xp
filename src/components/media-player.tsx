@@ -17,7 +17,7 @@ export default function MediaPlayer({ windowId }: { windowId: string }) {
             <iframe
               name="videoframe"
               className="w-full h-full"
-              src="https://www.youtube.com/embed/1oDrJba2PSs?si=E3rtjlVz0JYFuYWx"
+              src="https://www.youtube.com/embed/UDheYDpJvrA?si=L1YSJVXCMUQW4m5b&amp;controls=0"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
@@ -27,18 +27,18 @@ export default function MediaPlayer({ windowId }: { windowId: string }) {
           <div className="flex-none p-2 bg-black">
             <div className="flex flex-col space-y-2">
               <a
-                href="https://www.youtube.com/embed/1oDrJba2PSs?si=E3rtjlVz0JYFuYWx"
+                href="https://www.youtube.com/embed/UDheYDpJvrA?si=L1YSJVXCMUQW4m5b&amp;controls=0"
                 target="videoframe"
                 className="text-xs text-green-400"
               >
-                About Me (pt-BR).mp4
+                Sobre Mim.mp4
               </a>
               <a
-                href="https://www.youtube.com/embed/1oDrJba2PSs?si=E3rtjlVz0JYFuYWx"
+                href="https://www.youtube.com/embed/UDheYDpJvrA?si=L1YSJVXCMUQW4m5b&amp;controls=0"
                 target="videoframe"
                 className="text-xs text-green-400"
               >
-                About Me (en-US).mp4
+                About Me.mp4
               </a>
             </div>
           </div>

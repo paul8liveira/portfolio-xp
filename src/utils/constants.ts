@@ -9,10 +9,8 @@ and because of this I felt very nostalgic while developing this project.
 <br/>- Tailwind CSS v3.4 
 <br/>- Radix UI v2
 
-<br/><br/>The main ideia is: 
-<br/>- keeping developing the project using Next.js and its new
-functionalities as much as possible. 
-<br/>- keep the look and feel of the functinalities more Windows XP as possible 
+<br/><br/>The main ideia: 
+<br/>- keeping developing the project using Next.js and its new functionalities as much as possible and keep the look and feel more Windows XP as possible. 
 
 <br/><br/>The main features are: 
 <br/>- taskbar with icons and real time clock 
@@ -21,8 +19,8 @@ functionalities as much as possible.
 <br/>- double click desktop icons to open window
 <br/>- minimize, maximize and close window
 <br/>- static start menu made using radix ui dropdown component
-<br/>- functinal internet explorer window with address bar and go button 
-(note: most of web sites does not allow to be rendered in an iframe due to security reasons) 
+<br/>- functinal internet explorer window with address bar and go button (note: most of web sites does not allow to be rendered in an iframe due to security reasons)
+<br/>- github repos window that fetches the repos from my github account
 <br/>*not as I sigh for but functional
 <br/>(I hope keep the feature list growing... 🤞) 
 
