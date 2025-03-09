@@ -35,10 +35,12 @@
             absolute 
             p-0 
             m-0 
-            rounded-t-lg
-            top-[100px]
-            left-[150px];
+            rounded-t-lg;
 
+        @media (width >= 48rem) { 
+            top: 10%;
+            left: 15%;
+        }            
         box-shadow: inset -1px -1px #00138c, inset 1px 1px #0831d9, inset -2px -2px #001ea0, inset 2px 2px #166aee, inset -3px -3px #003bda, inset 3px 3px #0855dd;
     }    
     dialog header {
@@ -62,7 +64,12 @@
         text-shadow: 1px 1px #0f1089;
     }
     dialog section {
-        @apply w-[600px] h-[300px] mr-1 mb-1;
+        @media (width >= 48rem) { 
+            width: 600px;
+            height: 400px;
+        }
+        margin-right: 4px;
+        margin-bottom: 4px;
     }
     dialog .resizer-right {
         @apply w-[5px] h-full bg-transparent absolute right-0 bottom-0 cursor-e-resize;

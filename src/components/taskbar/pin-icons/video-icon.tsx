@@ -2,7 +2,7 @@
 
 import { useDesktop } from "@/contexts/desktop-context";
 import Icon from "@/components/icon/pin-icon";
-import Window from "@/components/window/window";
+import MediaPlayer from "@/components/media-player";
 
 export default function VideoPinIcon() {
   const { createWindowId, openWindow } = useDesktop();
@@ -11,15 +11,11 @@ export default function VideoPinIcon() {
     const windowId = createWindowId();
     openWindow(
       windowId,
-      () => (
-        <Window windowId={windowId} windowTitle="About Me.mp4">
-          <div className="p-2">video</div>
-        </Window>
-      ),
-      "About Me.mp4",
-      "/ico/video.ico"
+      () => <MediaPlayer windowId={windowId} />,
+      "Windows Media Player",
+      "/webp/media-player.webp"
     );
   };
 
-  return <Icon iconSrc="/ico/video.ico" onClick={handleClick} />;
+  return <Icon iconSrc="/webp/media-player.webp" onClick={handleClick} />;
 }

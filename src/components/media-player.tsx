@@ -24,19 +24,19 @@ export default function MediaPlayer({ windowId }: { windowId: string }) {
               allowFullScreen
             ></iframe>
           </div>
-          <div className="flex-none p-2 bg-black">
+          <div className="flex-none py-2 px-5 bg-black">
             <div className="flex flex-col space-y-2">
               <a
                 href="https://www.youtube.com/embed/UDheYDpJvrA?si=L1YSJVXCMUQW4m5b&amp;controls=0"
                 target="videoframe"
-                className="text-xs text-green-400"
+                className="text-xs text-green-400 hover:text-green-300 hover:underline"
               >
                 Sobre Mim.mp4
               </a>
               <a
                 href="https://www.youtube.com/embed/UDheYDpJvrA?si=L1YSJVXCMUQW4m5b&amp;controls=0"
                 target="videoframe"
-                className="text-xs text-green-400"
+                className="text-xs text-green-400 hover:text-green-300 hover:underline"
               >
                 About Me.mp4
               </a>
