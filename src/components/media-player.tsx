@@ -31,14 +31,14 @@ export default function MediaPlayer({ windowId }: { windowId: string }) {
                 target="videoframe"
                 className="text-xs text-green-400 hover:text-green-300 hover:underline"
               >
-                Sobre Mim.mp4
+                About Me (pt-BR).mp4
               </a>
               <a
-                href="https://www.youtube.com/embed/UDheYDpJvrA?si=L1YSJVXCMUQW4m5b&amp;controls=0"
+                href="https://www.youtube.com/embed/Q-heJHxwnPs?si=FPd5h-i2L23jr_hC&amp;controls=0"
                 target="videoframe"
                 className="text-xs text-green-400 hover:text-green-300 hover:underline"
               >
-                About Me.mp4
+                About Me (en-US).mp4
               </a>
             </div>
           </div>
