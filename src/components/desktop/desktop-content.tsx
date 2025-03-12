@@ -1,7 +1,5 @@
 "use client";
 
-import { Suspense } from "react";
-
 import {
   RecycleBinDesktopIcon,
   ReadmeDesktopIcon,
@@ -14,11 +12,15 @@ import {
 } from "@/components/desktop/icons";
 import WindowManager from "@/components/window/window-manager";
 import { handleMouseMove, handleMouseUp } from "@/utils/drag";
+import { Suspense } from "react";
 
-export default function DeskTopContent() {
-  const apiURL = process.env.NEXT_PUBLIC_API_URL;
-  const repos = fetch(`${apiURL}/api`).then((response) => response.json());
+export type GithubType = { id: number; name: string; html_url: string; language: string, topics: string[] };
 
+export default function DeskTopContent({
+  repos,
+}: {
+  repos: Promise<Array<GithubType>>;
+}) {
   return (
     <div
       className="w-full"
@@ -34,7 +36,7 @@ export default function DeskTopContent() {
       <ResumeENDesktopIcon />
       <LinkedinDesktopIcon />
       <Suspense>
-        <GithubDesktopIcon promise={repos} />
+        <GithubDesktopIcon repos={repos} />
       </Suspense>
       <WindowManager />
     </div>

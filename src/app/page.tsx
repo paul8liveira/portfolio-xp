@@ -1,5 +1,8 @@
 import DeskTopContent from "@/components/desktop/desktop-content";
 
 export default function Desktop() {
-  return <DeskTopContent />;
+  const repos = fetch("https://api.github.com/users/paul8liveira/repos").then(
+    (response) => response.json()
+  );
+  return <DeskTopContent repos={repos} />;
 }

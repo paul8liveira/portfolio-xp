@@ -5,19 +5,21 @@ import { use } from "react";
 import { useDesktop } from "@/contexts/desktop-context";
 import Icon from "@/components/icon/desktop-icon";
 import Github from "@/components/github";
-import { GithubType } from "@/app/api/route";
+import { GithubType } from "../desktop-content";
 
-type Props = { promise: Promise<GithubType[]> };
-
-export default function LinkedinDesktopIcon({ promise }: Props) {
+export default function LinkedinDesktopIcon({
+  repos,
+}: {
+  repos: Promise<Array<GithubType>>;
+}) {
   const { createWindowId, openWindow } = useDesktop();
-  const repos = use(promise);
-
+  const response = use(repos);
+  
   const handleDoubleClick = () => {
     const windowId = createWindowId();
     openWindow(
       windowId,
-      () => <Github windowId={windowId} repos={repos} />,
+      () => <Github windowId={windowId} repos={response} />,
       "Github Repos",
       "/png/folder.png"
     );
