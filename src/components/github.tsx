@@ -1,15 +1,14 @@
 import Image from "next/image";
 
 import Window from "@/components/window/window";
-import { GithubType } from "./desktop/desktop-content";
+import { GithubType } from "@/app/api/route";
 
-export default function Github({
-  windowId,
-  repos,
-}: {
+type Props = {
   windowId: string;
-  repos: Array<GithubType>;
-}) {
+  repos: GithubType[];
+};
+
+export default function Github({ windowId, repos }: Props) {
   const repoLanguage = (repo: GithubType) => {
     return repo.topics && repo.topics.length > 0
       ? repo.topics.join(", ")
